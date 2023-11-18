@@ -1,0 +1,72 @@
+<header class="header">
+  <!-- header top -->
+  <div class="header-top">
+    <div class="header-top-menu">
+      <div class="header-top-left">
+        <div class="header-top-left-content">
+          <p>{{chao_mung}}</p>
+        </div>
+      </div>
+      <div class="header-top-right">
+        <!-- huong dan tai khoan -->
+        <div class="instruct">
+          <a href="" class="">{{huong_dan_tai_khoan}}</a>
+        </div>
+        <!-- start account -->
+        <div class="Account text-center">
+          <a href="" class="">
+            <button class="openBtn">
+              <i class="fas fa-user" style="color: #ffff;"></i>
+            </button>
+          </a>
+        </div>
+        <!-- end account -->
+      </div>
+    </div>
+  </div>
+  <!-- header-bottom -->
+  <div class="header-bottom">
+    <!-- LOGO -->
+    <div class="header-bottom-logo">
+      <a href="">
+        <img src="https://i.imgur.com/oYIbin1.png" alt="Logo Header">
+      </a>
+    </div>
+    <!-- MENU -->
+    <div class="header-mega-menu" id="header-mega-menu">
+      <div class="menu">
+          <p-menubar [model]="items"></p-menubar>
+      </div>
+    </div>
+
+    <div class="menu-mobile" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+
+
+    <div id="overlay" class="overlay">
+      <div class="close">
+        <i class="fas fa-times" style="color: #ffffff;"></i>
+      </div>
+    </div>
+    <!-- TÌM KIẾM -->
+    <div class="search">
+      <div class="header-bottom-search" onclick="openSearchHero()" fdprocessedid="lcl5df">
+        <div class="background">
+          <i class="fas fa-search" style="color: #ffffff;"></i>
+        </div>
+      </div>
+      <!-- <div class="header-bottom-search-form">
+        <div id="FullScreenOverlay" class="overlay" style="display: none;">
+          <div id="background" style="display: none;"></div>
+          <div class="overlay-content">
+            <form action="">
+              <input name="s" autocomplete="off" type="text" placeholder="Nhập từ khóa" fdprocessedid="e4f9cj">
+              <button class="timkiem" type="submit" fdprocessedid="9zrt5g">Tìm kiếm</button>
+            </form>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</header>
